@@ -22,10 +22,10 @@
         android:id="@+id/etResultadoEcuacion"
         android:layout_width="341dp"
         android:layout_height="198dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="88dp"
         android:text="resultado resultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultadoresultado"
-        android:textSize="24sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTitulo" />
 

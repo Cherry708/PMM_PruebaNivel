@@ -91,7 +91,7 @@ class EcuacionSegundoGrado() {
                 resultado = "La ecuacion no tiene solucion"
 
             if (a != 0.0 && b != 0.0 && c == 0.0)
-                resultado = "X1 = 0\nX2 = ${(-b / a)}"
+                resultado = "X1 = 0\n\nX2 = ${(-b / a)}"
 
             if (a == 0.0 && b != 0.0 && c != 0.0)
                 resultado = "X1 = X2 = ${-c / b}"
@@ -103,9 +103,9 @@ class EcuacionSegundoGrado() {
                 if (discriminante < 0) {
                     discriminante = -discriminante;
                     resultado = Math.pow(discriminante, 0.5).toString();
-                    resultado = "numero imaginario: $resultado"+"i\n"
+                    resultado = "Número imaginario: $resultado"+"i\n"
                 } else
-                    resultado = "X1 = ${-b + Math.sqrt(discriminante) / (2 * a)}\n" +
+                    resultado = "X1 = ${-b + Math.sqrt(discriminante) / (2 * a)}\n\n" +
                             "X2 = ${-b - Math.sqrt(discriminante) / (2 * a)}"
             }
             return resultado
